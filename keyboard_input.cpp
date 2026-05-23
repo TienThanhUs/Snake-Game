@@ -5,8 +5,10 @@
 #include <cstdlib>
 #include <ctime>
 #include <thread>
-#include "LayKiTu.h"
+#include "keyboard_input.h"
+
 using namespace std;
+
 char getch()
 { // lay ki tu tu ban phim
     char buf = 0;
@@ -26,6 +28,7 @@ char getch()
     fcntl(STDIN_FILENO, F_SETFL, oldf);
     return buf;
 }
+
 int kbhit()
 { // check neu ban phim dc nhan
     struct termios oldt, newt;

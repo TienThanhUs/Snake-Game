@@ -1,11 +1,12 @@
 #pragma once
-#ifndef IN_H
-#define IN_H
+#ifndef CONSOLE_PRINTER_H
+#define CONSOLE_PRINTER_H
+
 class Print
 {
 public:
     void space();
-    
+
     void inSo3();
 
     void inSo2();
@@ -13,4 +14,5 @@ public:
     void inGo();
     void printSnake();
 };
+
 #endif

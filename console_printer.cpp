@@ -1,6 +1,9 @@
-#include "in.h"
-#include<iostream>
+#include "console_printer.h"
+
+#include <iostream>
+
 using namespace std;
+
 void Print::space()
 {
     for (int i = 0; i < 11; i++)
@@ -104,6 +107,7 @@ void Print::inSo2()
     }
     cout << "$$$$$$$$/ \n";
 }
+
 void Print::inSo1()
 {
     for (int i = 0; i < 75; i++)

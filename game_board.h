@@ -1,12 +1,13 @@
 #pragma once
-#ifndef BOARD_H
-#define BOARD_H
-#include "snake.h"
-#include "food.h"
-#include "in.h"
-#include<iostream>
-using namespace std;
-class Board
+#ifndef GAME_BOARD_H
+#define GAME_BOARD_H
+
+#include "snake_entity.h"
+#include "food_item.h"
+#include "console_printer.h"
+#include <iostream>
+
+class GameBoard
 {
 private:
     Print in;
@@ -16,25 +17,23 @@ private:
     Snake Medusa;
     int witdh;
     int height;
-    
+
     int timeLoss;
 
 public:
-    Board(const int &w, const int &h);
-    
-    
+    GameBoard(const int &w, const int &h);
+
     void draw();
-   
+
     bool checkAte();
-    
+
     void GenerateFood();
-    
+
     bool GameOver();
-    
+
     void Sleep(unsigned int milliseconds);
-   
+
     void Run();
-    
 };
 
 #endif

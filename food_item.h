@@ -1,6 +1,7 @@
 #pragma once
-#ifndef FOOD_H
-#define FOOD_H
+#ifndef FOOD_ITEM_H
+#define FOOD_ITEM_H
+
 class Food
 {
 private:
@@ -8,12 +9,12 @@ private:
 
 public:
     void setFoodX(const int &tung);
-   
+
     void setFoodY(const int &hoanh);
-   
+
     int getFoodX();
-    
+
     int getFoodY();
-    
 };
+
 #endif
